@@ -8,7 +8,7 @@ controller_list:
       - lwr_arm_4_joint
       - lwr_arm_5_joint
       - lwr_arm_6_joint
-  - name: fake_SDH2_controller
+  - name: fake_manipulator_controller
     joints:
       - sdh_finger_22_joint
       - sdh_finger_23_joint
