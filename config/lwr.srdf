@@ -43,6 +43,15 @@
     </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="SDH2" parent_link="lwr_arm_7_link" group="manipulator" parent_group="arm" />
+    <!--PASSIVE JOINT: Purpose: this element is used to mark joints that are not actuated-->
+    <passive_joint name="sdh_finger_21_joint" />
+    <passive_joint name="sdh_finger_22_joint" />
+    <passive_joint name="sdh_finger_23_joint" />
+    <passive_joint name="sdh_knuckle_joint" />
+    <passive_joint name="sdh_finger_12_joint" />
+    <passive_joint name="sdh_finger_13_joint" />
+    <passive_joint name="sdh_thumb_2_joint" />
+    <passive_joint name="sdh_thumb_3_joint" />
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
     <disable_collisions link1="base" link2="lwr_arm_1_link" reason="Adjacent" />
     <disable_collisions link1="base" link2="lwr_arm_2_link" reason="Never" />
