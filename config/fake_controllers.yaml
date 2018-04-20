@@ -17,3 +17,20 @@ controller_list:
       - sdh_finger_13_joint
       - sdh_thumb_2_joint
       - sdh_thumb_3_joint
+  - name: fake_world_arm_hand_controller
+    joints:
+      - world_joint
+      - lwr_arm_0_joint
+      - lwr_arm_1_joint
+      - lwr_arm_2_joint
+      - lwr_arm_3_joint
+      - lwr_arm_4_joint
+      - lwr_arm_5_joint
+      - lwr_arm_6_joint
+      - sdh_finger_22_joint
+      - sdh_finger_23_joint
+      - sdh_knuckle_joint
+      - sdh_finger_12_joint
+      - sdh_finger_13_joint
+      - sdh_thumb_2_joint
+      - sdh_thumb_3_joint
