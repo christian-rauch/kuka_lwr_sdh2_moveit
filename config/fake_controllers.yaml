@@ -19,7 +19,7 @@ controller_list:
       - sdh_thumb_3_joint
   - name: fake_world_arm_hand_controller
     joints:
-      - world_joint
+      - world_frame
       - lwr_arm_0_joint
       - lwr_arm_1_joint
       - lwr_arm_2_joint

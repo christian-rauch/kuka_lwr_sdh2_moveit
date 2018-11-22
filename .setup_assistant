@@ -1,10 +1,11 @@
 moveit_setup_assistant_config:
   URDF:
     package: kuka_lwr4_description
-    relative_path: robots/lwr_sdh.urdf
+    relative_path: urdf/lwr_sdh.urdf
+    xacro_args: ""
   SRDF:
     relative_path: config/lwr.srdf
   CONFIG:
     author_name: Christian Rauch
     author_email: Christian.Rauch@ed.ac.uk
-    generated_timestamp: 1524240351
+    generated_timestamp: 1542899894

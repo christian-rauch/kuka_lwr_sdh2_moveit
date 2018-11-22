@@ -6,11 +6,11 @@
   <arg name="robot_description" default="robot_description"/>
 
   <!-- Load universal robot description format (URDF) -->
-  <param if="$(arg load_robot_description)" name="$(arg robot_description)" textfile="$(find kuka_lwr4_description)/robots/lwr_sdh.urdf"/>
+  <param if="$(arg load_robot_description)" name="$(arg robot_description)" textfile="$(find kuka_lwr4_description)/urdf/lwr_sdh.urdf"/>
 
   <!-- The semantic description that corresponds to the URDF -->
   <param name="$(arg robot_description)_semantic" textfile="$(find kuka_lwr_sdh2_moveit)/config/lwr.srdf" />
-  
+
   <!-- Load updated joint limits (override information from URDF) -->
   <group ns="$(arg robot_description)_planning">
     <rosparam command="load" file="$(find kuka_lwr_sdh2_moveit)/config/joint_limits.yaml"/>
@@ -20,5 +20,5 @@
   <group ns="$(arg robot_description)_kinematics">
     <rosparam command="load" file="$(find kuka_lwr_sdh2_moveit)/config/kinematics.yaml"/>
   </group>
-  
+
 </launch>
